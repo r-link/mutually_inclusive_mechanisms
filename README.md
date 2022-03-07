@@ -16,6 +16,9 @@ Messier C, Paquette A, Saurer M, Scherer-Lorenzen M, Rose L, Schuldt B
 mortality. *Global Change Biology* N/N.
 [doi:10.1111/gcb.16146](https://doi.org/10.1111/gcb.16146)
 
+The raw data are also available as a repository on datadryad.org:
+[doi:10.5061/dryad.sqv9s4n5t](https://www.doi.org/10.5061/dryad.sqv9s4n5t)
+
 ## Structure
 
 The documents in the root folder (`/`) perform the basic steps of the
