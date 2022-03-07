@@ -133,7 +133,6 @@ phi <- as.data.frame(phi_raw) %>%
                     ymin > 0 ~ "pos",
                     TRUE ~ "0"),
     dir = factor(dir, levels = c("neg", 0, "pos"), ordered = TRUE),
-    species = factor(species, levels = ord, ordered = TRUE),
     group = "Misclassification rates")
 
 # 0.4 Predicted average mortality rates ----------------------------------------
@@ -247,7 +246,6 @@ ovp_plot <- ovp %>%
   mutate(group = "Observed and predicted plot-level mortality") %>% 
   ggplot(aes(x = mort, y = pred)) + 
   geom_point(alpha = 0.3, col = 4, size = 1) +
-  #geom_smooth(method = "lm", col = 1, lty = 2, se = F) +
   geom_abline()  +
   facet_wrap(~group) +
   theme_linedraw(base_size = 9) +
@@ -255,10 +253,6 @@ ovp_plot <- ovp %>%
   theme(legend.position = "none",
         plot.margin = unit(c(1,1,1,1), units = "mm")) 
 ovp_plot
-
-# plot level (raw) rsq
-with(ovp, var(pred) / (var(pred) + var(res1))) 
-#  > 0.9 - high proportion of variance explained at plot level
 
 # Fig. 3. HSM and NSC effects -------------------------------------------------
 ## .....a. HSM -----
@@ -475,6 +469,7 @@ neigh_plot
 
 # Fig. S2.1. Misclassification parameter --------------------------------------
 ones <- phi %>% 
+  mutate(species = factor(species, levels = ord, ordered = TRUE)) %>% 
   ggplot(aes(x = species, y , ymin = ymin, ymax = ymax, col = dir)) +
   geom_pointrange(fatten = 0, size = .3) +
   geom_hline(yintercept = 0, lty = 2) +
@@ -711,13 +706,13 @@ ggsave("figures/fig5_neighbourhood_effects.png", neigh_plot, width = 11.25,
 
 
 # Supplementary material
-ggsave("figures/S2-1_one_inflation.png", ones, width = 11.25, 
+ggsave("figures/S2-2_one_inflation.png", ones, width = 11.25, 
        height = 5, units = "cm")
-ggsave("figures/S2-2_species_level_effects.png", specwise_effs, width = 16, 
+ggsave("figures/S2-3_species_level_effects.png", specwise_effs, width = 16, 
        height = 12, units = "cm")
-ggsave("figures/S2-3_variance_parameters.png", varplot, width = 14.5, 
+ggsave("figures/S2-4_variance_parameters.png", varplot, width = 14.5, 
        height = 16, units = "cm")
-ggsave("figures/S2-4_neighbour_pairs.png", neigh_pairs, width = 18, 
+ggsave("figures/S2-5_neighbour_pairs.png", neigh_pairs, width = 18, 
        height = 8, units = "cm")
-ggsave("figures/S2-5_plot_effects.png", plot_effs, width = 18, 
+ggsave("figures/S2-6_plot_effects.png", plot_effs, width = 18, 
        height = 5, units = "cm")
