@@ -1,8 +1,7 @@
 ---
 title: "Mutually inclusive mechanisms of drought-induced tree mortality"
-subtitle: "Code repository for Hajek, Link et al. (2021)" 
+subtitle: "Code repository for Hajek, Link et al. (2022)" 
 output: 
-    pdf_document: default
     github_document: default
 ---
 
@@ -11,9 +10,11 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Description
-The present repository is part of Hajek, Link et al. (2021) and contains the code necessary for preparing the dataset and fitting the hierarchical Bayesian model described in the paper.
+The present repository is part of **Hajek, Link et al. (2022)** and contains the code necessary for preparing the dataset and fitting the hierarchical Bayesian model described in the paper.
 
-It will be published as a public Github repository under the link https://github.com/r-link/mutually_inclusive_mechanisms upon the release of the publication.
+The paper was published under an CC BY 4.0 open-access license and can be cited as follows: 
+
+**Hajek P, Link RM, Nock CA, Bauhus J, Gebauer T, Gessler A, Kovach K, Messier C, Paquette A, Saurer M, Scherer-Lorenzen M, Rose L, Schuldt B (2022).** Mutually inclusive mechanisms of drought-induced tree mortality. _Global Change Biology_ N/N. [doi:10.1111/gcb.16146](https://doi.org/10.1111/gcb.16146)
 
 ## Structure
 The documents in the root folder (`/`) perform the basic steps of the data analysis.

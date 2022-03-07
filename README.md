@@ -3,9 +3,18 @@ Mutually inclusive mechanisms of drought-induced tree mortality
 
 ## Description
 
-The present repository is part of Hajek, Link et al. (2021) and contains
-the code necessary for preparing the dataset and fitting the
+The present repository is part of **Hajek, Link et al. (2022)** and
+contains the code necessary for preparing the dataset and fitting the
 hierarchical Bayesian model described in the paper.
+
+The paper was published under an CC BY 4.0 open-access license and can
+be cited as follows:
+
+**Hajek P, Link RM, Nock CA, Bauhus J, Gebauer T, Gessler A, Kovach K,
+Messier C, Paquette A, Saurer M, Scherer-Lorenzen M, Rose L, Schuldt B
+(2022).** Mutually inclusive mechanisms of drought-induced tree
+mortality. *Global Change Biology* N/N.
+[doi:10.1111/gcb.16146](https://doi.org/10.1111/gcb.16146)
 
 ## Structure
 
