@@ -9,6 +9,9 @@
 # This script generates all figures in the publication based on the model output
 # from Script 05.
 
+# create folder for output figures
+dir.create("figures")
+
 # 0.1 Load packages -----------------------------------------------------------
 # if pacman is not installed, install via install.packages("pacman").
 # the package manager will take care of the installation of all subsequent 

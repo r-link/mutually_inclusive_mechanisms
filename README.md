@@ -22,7 +22,7 @@ The documents in the root folder (`/`) perform the basic steps of the
 data analysis. The raw data are in the `/data` folder, the `/stan`
 folder contains the Stan code required for model fitting, and
 intermediate results and model output are stored in `/output`. Visual
-output generated after running script 06 is stored in `/figures`.
+output is stored in `/figures` (folder is created locally in script 06).
 
     /           top-level scripts:
                   01_vulnerability_curves.R
