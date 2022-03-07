@@ -2,5 +2,6 @@
 .Rhistory
 .RData
 .Ruserdata
-output/*
+output/*.RData
+output/*.rds
 stan/*.rds
