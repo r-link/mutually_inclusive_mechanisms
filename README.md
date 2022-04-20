@@ -13,7 +13,7 @@ be cited as follows:
 **Hajek P, Link RM, Nock CA, Bauhus J, Gebauer T, Gessler A, Kovach K,
 Messier C, Paquette A, Saurer M, Scherer-Lorenzen M, Rose L, Schuldt B
 (2022).** Mutually inclusive mechanisms of drought-induced tree
-mortality. *Global Change Biology* N/N.
+mortality. *Global Change Biology* 28(10): 3365-3378.
 [doi:10.1111/gcb.16146](https://doi.org/10.1111/gcb.16146)
 
 The raw data are also available as a repository on datadryad.org:
